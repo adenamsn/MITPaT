@@ -1,3 +1,8 @@
+## Name: Hezekiah Seun Adewinbi 
+## Course: Managing IT Projects and Teams 
+## Date: April 1, 2020 
+## Assignment Number: The Apollo Syndrome
+
 The central point of chapter 2 of the book is the reasons why strong teams with clever people
 failed.
 1. Mismanagement of time: The Apollo team members spent a large part of their time
