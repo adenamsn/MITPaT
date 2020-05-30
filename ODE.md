@@ -30,3 +30,19 @@ print "\n Enter ODE to solve by typing solveODE(fSpec,x0,dt,tmax)\n\
  where fSpec is a string giving the function of x and t"
 ```
 ```python
+def solveRH222(fSpec,x0,h,tmax):
+       f = eval("lambda x,t:" + fSpec)
+       t,x = 0.0,x0
+       xk = [x0]
+       tk = [0.0]
+       while t < tmax - h/2 :
+        k1 = h*f(x, t)
+        k2 = h*f(x + 0.5*k1,t + (0.5)*h)
+        x += k2
+        t += h
+        tk.append(t)
+        xk.append(x)
+        E11=abs(np.exp(1)-xk[-1])
+        ER11= abs(E11/xk[-1])
+        return ER11
+   ```
